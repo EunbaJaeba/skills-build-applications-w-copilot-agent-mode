@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+  --bg-1: #fff0d1;
+  --bg-2: #ffc89c;
+  --ink: #10151f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Archivo', sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 14% 10%, rgba(255, 255, 255, 0.65) 0, transparent 26%),
+    radial-gradient(circle at 90% 85%, rgba(214, 70, 0, 0.18) 0, transparent 30%),
+    linear-gradient(140deg, var(--bg-1), var(--bg-2));
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: 'Space Mono', monospace;
+}

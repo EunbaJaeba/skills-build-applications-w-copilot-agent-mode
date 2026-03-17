@@ -1,0 +1,133 @@
+.App {
+  min-height: 100vh;
+  color: #10151f;
+}
+
+.hero {
+  padding: 2.5rem 2rem 1rem;
+  animation: rise-in 500ms ease-out;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.76rem;
+  margin: 0;
+  color: #d64600;
+}
+
+.hero h1 {
+  margin: 0.3rem 0 1rem;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  line-height: 1.05;
+  max-width: 18ch;
+}
+
+.hero nav {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.hero nav a {
+  text-decoration: none;
+  color: #10151f;
+  border: 2px solid #10151f;
+  border-radius: 999px;
+  padding: 0.4rem 0.95rem;
+  font-weight: 600;
+  transition: all 180ms ease;
+}
+
+.hero nav a:hover {
+  background: #10151f;
+  color: #fffaf2;
+}
+
+.page-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  padding: 1rem 2rem 2.5rem;
+}
+
+.collection-card,
+.about-panel {
+  background: rgba(255, 250, 242, 0.84);
+  backdrop-filter: blur(4px);
+  border-radius: 16px;
+  border: 1px solid rgba(16, 21, 31, 0.15);
+  box-shadow: 0 8px 24px rgba(16, 21, 31, 0.08);
+  padding: 1rem;
+  animation: rise-in 460ms ease-out;
+}
+
+.card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.card-head h2 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.card-head span {
+  font-size: 0.9rem;
+  color: #5f6772;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.6rem;
+}
+
+th,
+td {
+  text-align: left;
+  border-bottom: 1px solid rgba(16, 21, 31, 0.12);
+  padding: 0.45rem 0.25rem;
+  font-size: 0.86rem;
+}
+
+th {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #5f6772;
+}
+
+.error-text {
+  margin-top: 0.8rem;
+  color: #af1b00;
+  font-size: 0.9rem;
+}
+
+.about-panel {
+  margin: 1rem 2rem 2rem;
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero,
+  .page-grid,
+  .about-panel {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
